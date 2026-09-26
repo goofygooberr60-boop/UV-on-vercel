@@ -32,11 +32,15 @@ server.on('upgrade', (req, socket, head) => {
 })
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(process.cwd(), '/public/index.html'));
+    res.redirect('/?url=https://cinera.cc');
 });
 
 app.get('/index', (req, res) => {
-    res.sendFile(path.join(process.cwd(), '/public/index.html'));
+    res.redirect('/?url=https://cinera.cc');
+});
+
+});
+
 });
 
 /* add your own extra urls like this:
